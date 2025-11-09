@@ -1,0 +1,16 @@
+relationship c24801e7-4270-4f36-b1bd-f3450697e3ae
+	fromColumn: Sales.ProductID
+	toColumn: Products.ProductID
+
+relationship ac9d3df8-1696-490a-a883-7ee3fe8b9151
+	fromColumn: Sales.CustomerID
+	toColumn: Customers.CustomerID
+
+relationship 18665fb2-fb33-4a67-914c-5ea415c86b0a
+	fromColumn: Sales.SalespersonID
+	toColumn: Salespersons.SalespersonID
+
+relationship 1e151428-e2a8-4318-82d4-79b133354643
+	fromColumn: Sales.BusinessUnitID
+	toColumn: BusinessUnits.BusinessUnitID
+

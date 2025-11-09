@@ -1,0 +1,34 @@
+table Salespersons
+	lineageTag: b7c1c099-5450-4229-9c89-ffaad00d3b6a
+
+	column SalespersonID
+		dataType: int64
+		formatString: 0
+		lineageTag: 37cc9a3b-5e15-4a51-958d-00c65d60912a
+		summarizeBy: none
+		sourceColumn: SalespersonID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Salesperson
+		dataType: string
+		lineageTag: 36f778e5-c2bc-4521-8a7e-e07f5c1ec0f6
+		summarizeBy: none
+		sourceColumn: Salesperson
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition Salespersons-2b214a86-9db5-4444-96c8-ed381eedb3bb = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\OneDrive - kteam.ch\K TEAM\Kunden\Zebra BI\KB\Data sources\Sales_demo_DB.xlsx"), null, true),
+				    Salespersons_Table = Source{[Item="Salespersons",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Salespersons_Table,{{"SalespersonID", Int64.Type}, {"Salesperson", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

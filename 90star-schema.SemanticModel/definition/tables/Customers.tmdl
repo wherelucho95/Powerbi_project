@@ -1,0 +1,63 @@
+table Customers
+	lineageTag: 186d7c02-864c-4138-bea2-0f56e6268a63
+
+	column CustomerID
+		dataType: int64
+		formatString: 0
+		lineageTag: 678e5914-924e-466d-b558-5138e5b79b89
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer
+		dataType: string
+		lineageTag: bf567620-cc6d-4f1e-893a-2d4032998fef
+		summarizeBy: none
+		sourceColumn: Customer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Region
+		dataType: string
+		lineageTag: 2ba38574-6806-47bc-b614-37d0ebb28b49
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column RegionID
+		dataType: int64
+		formatString: 0
+		lineageTag: f72cbc46-469b-4aae-9753-00fa847aff90
+		summarizeBy: none
+		sourceColumn: RegionID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CountryID
+		dataType: string
+		lineageTag: 9c76b5d5-2908-4b95-9855-f7789a66d12a
+		summarizeBy: none
+		sourceColumn: CountryID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition Customers-d9bfffa4-4938-4bb1-b7e0-c4b725eecc0f = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\OneDrive - kteam.ch\K TEAM\Kunden\Zebra BI\KB\Data sources\Sales_demo_DB.xlsx"), null, true),
+				    Customers_Table = Source{[Item="Customers",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Customers_Table,{{"CustomerID", Int64.Type}, {"Customer", type text}, {"Region", type text}, {"RegionID", Int64.Type}, {"CountryID", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

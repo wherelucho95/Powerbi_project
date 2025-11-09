@@ -1,0 +1,251 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY19SU12\",\"type\":2,\"version\":\"5.11\"}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"allowDataPointLassoSelect\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY19SU12",
+            "path": "BaseThemes/CY19SU12.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "IBCS_certified0193250899447015.png",
+            "path": "IBCS_certified0193250899447015.png",
+            "type": 100
+          },
+          {
+            "name": "certified-visual-microsoft6096142304821148.png",
+            "path": "certified-visual-microsoft6096142304821148.png",
+            "type": 100
+          },
+          {
+            "name": "logo_6000048489312666044615.png",
+            "path": "logo_6000048489312666044615.png",
+            "type": 100
+          },
+          {
+            "name": "star_schema46054175468391256.png",
+            "path": "star_schema46054175468391256.png",
+            "type": 100
+          },
+          {
+            "name": "webinar-home-page-background3871739635653353.png",
+            "path": "webinar-home-page-background3871739635653353.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "variance89B79F7D9229463CB8A551500FE7F5E3.pbiviz.json",
+            "path": "variance89B79F7D9229463CB8A551500FE7F5E3.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "variance89B79F7D9229463CB8A551500FE7F5E3",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "waterfall0221D8FBE40445C1A4E598AA8EF8B506.pbiviz.json",
+            "path": "waterfall0221D8FBE40445C1A4E598AA8EF8B506.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "waterfall0221D8FBE40445C1A4E598AA8EF8B506",
+        "type": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'webinar-home-page-background.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"webinar-home-page-background3871739635653353.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "About",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2dab23aa7a00da631ec9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":122.18181818181819,\"y\":680.4363636363637,\"z\":10000,\"width\":259.4909090909091,\"height\":39.56363636363636,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"©2020 Zebra BI  |  \",\"textStyle\":{\"fontFamily\":\"Segoe UI\"}},{\"value\":\"https://zebrab\",\"textStyle\":{\"fontFamily\":\"Segoe UI\"},\"url\":\"https://bit.ly/3jvRl6g\"},{\"value\":\"i.com\",\"textStyle\":{},\"url\":\"https://bit.ly/3jvRl6g\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 39.56,
+          "width": 259.49,
+          "x": 122.18,
+          "y": 680.44,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"34b6a0ad5476a0c9e500\",\"layouts\":[{\"id\":0,\"position\":{\"x\":523.2618025751073,\"y\":54.93562231759657,\"z\":3000,\"width\":370.8154506437768,\"height\":50.81545064377682,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Zebra BI Knowledge Base\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Segoe UI\",\"fontSize\":\"20pt\"}}]}]}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 50.82,
+          "width": 370.82,
+          "x": 523.26,
+          "y": 54.94,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"37785b1021d19c15d3e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784.290909090909,\"y\":481.74545454545455,\"z\":0,\"width\":309.5272727272727,\"height\":16.29090909090909,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"basicShape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}}}}],\"line\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 16.29,
+          "width": 309.53,
+          "x": 784.29,
+          "y": 481.75,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4face7e6da3a65d46289\",\"layouts\":[{\"id\":0,\"position\":{\"x\":530.6181818181818,\"y\":525.9636363636364,\"z\":12000,\"width\":282.76363636363635,\"height\":53.527272727272724,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Download Zebra BI for Power BI'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://bit.ly/30xsZk0'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 53.53,
+          "width": 282.76,
+          "x": 530.62,
+          "y": 525.96,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"5310129681b7dbe0c142\",\"layouts\":[{\"id\":0,\"position\":{\"x\":523.2618025751073,\"y\":465.5793991416309,\"z\":9000,\"width\":280.17167381974247,\"height\":42.57510729613734,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"This PBIX file is an example from the \",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 42.58,
+          "width": 280.17,
+          "x": 523.26,
+          "y": 465.58,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"5c832350672b8930796b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":527.1272727272727,\"y\":610.9090909090909,\"z\":13000,\"width\":496.8727272727273,\"height\":47.70909090909091,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"For questions or support, shoot us an email to\",\"textStyle\":{\"fontSize\":\"12pt\"}},{\"value\":\" \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#000000\"}},{\"value\":\"support@zebra.bi\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#000000\"},\"url\":\"mailto:support@zebra.bi\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 47.71,
+          "width": 496.87,
+          "x": 527.13,
+          "y": 610.91,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"830ea4a8867b43edaa50\",\"layouts\":[{\"id\":0,\"position\":{\"x\":519.1416309012875,\"y\":87.8969957081545,\"z\":5000,\"width\":336.48068669527896,\"height\":43.94849785407725,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"basicShape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}}}}],\"line\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 43.95,
+          "width": 336.48,
+          "x": 519.14,
+          "y": 87.90,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"94284a40d405b810e103\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.90909090909091,\"y\":465.45454545454544,\"z\":6000,\"width\":185.01818181818183,\"height\":173.38181818181818,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"IBCS_certified0193250899447015.png\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 173.38,
+          "width": 185.02,
+          "x": 34.91,
+          "y": 465.45,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9838e8cb1869624b5075\",\"layouts\":[{\"id\":0,\"position\":{\"x\":122.23175965665236,\"y\":111.24463519313305,\"z\":4000,\"width\":151.07296137339054,\"height\":89.27038626609442,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Advanced visuals for Power BI\",\"textStyle\":{\"fontFamily\":\"Segoe UI\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 89.27,
+          "width": 151.07,
+          "x": 122.23,
+          "y": 111.24,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"aa9a8c332b0ae333e16c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.722846441947567,\"y\":49.857677902621724,\"z\":2000,\"width\":304.8988764044944,\"height\":61.36329588014981,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"logo_6000048489312666044615.png\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 61.36,
+          "width": 304.90,
+          "x": 29.72,
+          "y": 49.86,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"c106953c8ac2be8b354d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":238.31887425556206,\"y\":560.061871564281,\"z\":8000,\"width\":116.7381974248927,\"height\":34.33476394849785,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"by \",\"textStyle\":{\"fontFamily\":\"Segoe UI Light\",\"fontSize\":\"12pt\"}},{\"value\":\"Microsoft\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 34.33,
+          "width": 116.74,
+          "x": 238.32,
+          "y": 560.06,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"e48b7ecb64a00bd02407\",\"layouts\":[{\"id\":0,\"position\":{\"x\":782.0021125415957,\"y\":453.69151207746603,\"z\":11000,\"width\":310.3862660944206,\"height\":53.56223175965665,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Zebra BI Knowledge Base for Power BI'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://bit.ly/3c0LsuI'\"}}},\"tooltip\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 53.56,
+          "width": 310.39,
+          "x": 782.00,
+          "y": 453.69,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"ee714d0c76e8519a6e67\",\"layouts\":[{\"id\":0,\"position\":{\"x\":520.629213483146,\"y\":111.22097378277154,\"z\":1000,\"width\":667.3258426966293,\"height\":321.19850187265916,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Star Schema\",\"textStyle\":{\"fontFamily\":\"Segoe UI Light\",\"fontSize\":\"66px\"}}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 321.20,
+          "width": 667.33,
+          "x": 520.63,
+          "y": 111.22,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fcb51d248c0bbb055d47\",\"layouts\":[{\"id\":0,\"position\":{\"x\":220.0909090067854,\"y\":471.27272727266694,\"z\":7000,\"width\":150.0808625336927,\"height\":150.0808625336927,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"certified-visual-microsoft6096142304821148.png\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 150.08,
+          "width": 150.08,
+          "x": 220.09,
+          "y": 471.27,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Star Schema",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection9dd73653a510be871449",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"92d8caf7c1a8a4bd374d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":190.020618556701,\"y\":120.74226804123711,\"z\":0,\"width\":900.6185567010309,\"height\":549.2783505154639,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"star_schema46054175468391256.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 549.28,
+          "width": 900.62,
+          "x": 190.02,
+          "y": 120.74,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e048be7f0e0b5889835f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":62.24924012158055,\"y\":27.23404255319149,\"z\":1000,\"width\":1119.5136778115502,\"height\":77.81155015197568,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"This file shows what a proper Star Schema looks like. Select the Model view on the left to see the actual data model of this report\",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 77.81,
+          "width": 1119.51,
+          "x": 62.25,
+          "y": 27.23,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

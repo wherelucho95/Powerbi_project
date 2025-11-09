@@ -1,0 +1,29 @@
+{
+  "version": "4.1.0",
+  "author": {
+    "name": "Zebra BI",
+    "email": "info@zebra.bi"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/waterfall6C9ED82ABD1F44C4A0D590CE01EB5EE7.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "waterfall6C9ED82ABD1F44C4A0D590CE01EB5EE7",
+    "name": "ZebraBICharts",
+    "displayName": "Zebra BI Charts",
+    "version": "4.1.0",
+    "description": "One visual, many charts. Waterfall, variance, column, area, line, dot, combo… in small multiples!",
+    "supportUrl": "https://zebrabi.com/pbi-help",
+    "gitHubUrl": "",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

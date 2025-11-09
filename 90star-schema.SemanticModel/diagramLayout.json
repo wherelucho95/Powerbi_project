@@ -1,0 +1,81 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1.4,
+            "y": 108.9
+          },
+          "nodeIndex": "BusinessUnits",
+          "size": {
+            "height": 179,
+            "width": 238
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 575.4,
+            "y": 97
+          },
+          "nodeIndex": "Customers",
+          "size": {
+            "height": 198,
+            "width": 238
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 575.4,
+            "y": 358
+          },
+          "nodeIndex": "Products",
+          "size": {
+            "height": 179,
+            "width": 238
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 279.4,
+            "y": 159.4
+          },
+          "nodeIndex": "Sales",
+          "size": {
+            "height": 313,
+            "width": 256
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 369.4
+          },
+          "nodeIndex": "Salespersons",
+          "size": {
+            "height": 141,
+            "width": 238
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,112 @@
+table Sales
+	lineageTag: 112e2cbc-5a30-45d1-933a-62b025efa48c
+
+	column Date
+		dataType: dateTime
+		lineageTag: cb574674-b7c9-4b73-b33d-15a847e90619
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column ProductID
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4126ae9d-ffb9-4f6b-bacf-e674947040c4
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerID
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8b97cf6d-464f-4a63-81cb-f541ca18a708
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalespersonID
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d5fc4351-0c7d-4aff-b4ec-00ec4e0c3a6a
+		summarizeBy: none
+		sourceColumn: SalespersonID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column BusinessUnitID
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 64caddaf-d5e4-48ea-9a25-4ae0585c925a
+		summarizeBy: none
+		sourceColumn: BusinessUnitID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Revenue
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 986bc590-b1ce-4c9c-99ca-e5a60f35490a
+		summarizeBy: sum
+		sourceColumn: Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cost
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 9fb0d092-4bff-42a7-b8cd-8c8de6b1c31d
+		summarizeBy: sum
+		sourceColumn: Cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gross Profit'
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 26176d3a-1746-49fb-b513-d744f19c5c18
+		summarizeBy: sum
+		sourceColumn: Gross Profit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Scenario
+		dataType: string
+		lineageTag: b817f52f-aefa-42a5-b9ab-040cb1bb16ed
+		summarizeBy: none
+		sourceColumn: Scenario
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition Sales-b20008a6-a7a5-415b-aeca-b95531b0aa6f = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\OneDrive - kteam.ch\K TEAM\Kunden\Zebra BI\KB\Data sources\Sales_demo_DB.xlsx"), null, true),
+				    Sales_Table = Source{[Item="Sales",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Sales_Table,{{"Date", type date}, {"ProductID", Int64.Type}, {"CustomerID", Int64.Type}, {"SalespersonID", Int64.Type}, {"BusinessUnitID", Int64.Type}, {"Revenue", type number}, {"Cost", type number}, {"Gross Profit", type number}, {"Scenario", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

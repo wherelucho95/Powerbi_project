@@ -1,0 +1,54 @@
+table BusinessUnits
+	lineageTag: 05b4ffdb-8e7a-4a7d-9c50-c44272ca7e04
+
+	column BusinessUnitID
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ae82e1d-1ea9-41cd-8776-042520a955ef
+		summarizeBy: none
+		sourceColumn: BusinessUnitID
+
+		annotation SummarizationSetBy = Automatic
+
+	column BusinessUnit
+		dataType: string
+		lineageTag: 2a3c11c0-1bfe-41b1-9d7e-a2b7f5be0408
+		summarizeBy: none
+		sourceColumn: BusinessUnit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Division
+		dataType: string
+		lineageTag: bf01dd47-516d-4d3c-b015-294f546f21e1
+		summarizeBy: none
+		sourceColumn: Division
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Group
+		dataType: string
+		lineageTag: 2bc51f00-1389-4605-a5e2-da9a90bba035
+		summarizeBy: none
+		sourceColumn: Group
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition BusinessUnits-6284ee72-9736-4b58-9edf-c184a4a442a0 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\OneDrive - kteam.ch\K TEAM\Kunden\Zebra BI\KB\Data sources\Sales_demo_DB.xlsx"), null, true),
+				    BusinessUnits_Table = Source{[Item="BusinessUnits",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(BusinessUnits_Table,{{"BusinessUnitID", Int64.Type}, {"BusinessUnit", type text}, {"Division", type text}, {"Group", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

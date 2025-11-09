@@ -1,0 +1,29 @@
+{
+  "version": "5.3.1",
+  "author": {
+    "name": "Zebra BI",
+    "email": "info@zebra.bi"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/variance89B79F7D9229463CB8A551500FE7F5E3.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "name": "ZebraBITables",
+    "displayName": "Zebra BI Tables",
+    "guid": "variance89B79F7D9229463CB8A551500FE7F5E3",
+    "visualClassName": "Visual",
+    "version": "5.3.1",
+    "description": "Stunning tables with charts. Perfect for sales or cost variance reporting, income statements, ...",
+    "supportUrl": "https://zebrabi.com/pbi-help",
+    "gitHubUrl": ""
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
